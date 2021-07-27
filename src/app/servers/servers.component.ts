@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
   allowNewServer: boolean = false;
+  color: string = '#33ff33';
 
   constructor() {
     setTimeout(() => {
