@@ -1,1 +1,4 @@
-<p [ngStyle]="{backgroundColor: getColor()}">{{'Server'}} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<!-- ngClass will only add css class if condition is true/false  -->
+<p [ngStyle]="{backgroundColor: getColor()}"
+[ngClass]="{online: serverStatus === 'online'}"> 
+{{'Server'}} with ID {{ serverId }} is {{ getServerStatus() }}</p> 
