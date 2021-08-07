@@ -26,6 +26,6 @@
 </p>
 <ng-template #noServer> <p>No server was created!</p> </ng-template> -->
 
-<div [ngStyle]="{backgroundColor:  logItem >= 5 ? 'blue': 'transparent'}" [ngClass]="{'white-text': logItem >= 5 }" *ngFor="let logItem of logs">Log number {{logItem}} was created!</div>
+<div [ngStyle]="{backgroundColor:  i >= 4 ? 'blue': 'transparent'}" [ngClass]="{'white-text': i >= 4 }" *ngFor="let logItem of logs; let i = index">Log: {{logItem}} was created!</div>
 
 <!-- <app-server *ngFor="let server of servers"></app-server> -->

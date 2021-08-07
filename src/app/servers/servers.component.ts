@@ -31,7 +31,8 @@ export class ServersComponent implements OnInit {
   }
 
   onShowPassword() {
-    this.logs.push(this.logs.length + 1);
+    // this.logs.push(this.logs.length + 1);
+    this.logs.push(new Date());
 
     this.showPassword === false
       ? (this.showPassword = true)
